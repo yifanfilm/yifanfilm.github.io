@@ -1,1 +1,124 @@
-Coming soon...
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style1.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed&display=swap" rel="stylesheet">
+
+    <title>Family&#178 The Documentary</title>
+
+    <style>
+        sup {
+            font-size: 95px;
+        }
+    </style>
+
+</head>
+<body>
+    <header class="v-header container">
+        <div class="fullscreen-video-wrap">
+            <video src="video.mp4" autoplay loop></video>
+        </div>
+        <div class="header-overlay"></div>
+        <div class="header-content">
+            <h1>FAMILY<sup>2</sup></h1>
+            <img src="img/bafta.png" width="161" height="65"/>
+            <p></p>
+            <a id="video1" class="btn" video-url="https://vimeo.com/346249794">
+                WATCH THE TRAILER
+            </a>
+        </div>
+
+    </header>
+
+    <section class="section section-a">
+        <div class="container">
+            <h1>STORY</h1>
+            <p>Lola was adopted into a Belgian family eleven years ago when she was an infant. Over the years,
+                she has been imagining the reunion with her birth family in China. This summer, her dream finally
+                comes true. When Lola's two families finally meet for the first time, how will they spend the time
+                together? What will Lola's birth parents tell her?
+            </p>
+        </div>
+    </section>
+
+    <section class="section section-b">
+        <div class="container">
+            <h1>CREW</h1>
+            <div class="crew">
+                <div class="crew-list">
+                    <h3><b>DIRECTOR</b></h3>
+                    <img src="img/crew-yifan.jpg" class="rounded-circle" width="200" height="200"/>
+                    <h3><b>YIFAN SUN</b></h3>
+                    <p class="bio">Director and writer based in Warsaw and Beijing.</p>
+                    <p class="bio">Yifan was born and raised in Inner Mongolia, having graduated from Beijing Film
+                        Academy (BFA), she continued her adventure with films.
+                        She is currently pursuing her M.A. in Film Directing at Lodz Film School in Poland. Her films
+                        have been selected to worldwide film festivals/awards, including InsideOut, student BAFTA.
+                    </p>
+
+                </div>
+                <div class="crew-list">
+                    <h3><b>CINEMATOGRAPHER</b></h3>
+                    <img src="img/crew-alicia.jpg" class="rounded-circle" width="200" height="200"/>
+                    <h3><b>ALICIA DEVAUX</b></h3>
+                    <p class="bio">
+                    </p>
+                </div>
+                <div class="crew-list">
+                    <h3><b>EDITOR</b></h3>
+                    <img src="img/crew-dorota.jpg" class="rounded-circle" width="200" height="200"/>
+                    <h3><b>DOROTA ROŚ</b></h3>
+                    <p class="bio">
+                        Dorota Roś was born in Warsaw, Poland. Since 2014 she is enrolled in Lodz Film School
+                        at the editing faculty. </p>
+                    <p class="bio">
+                        As an editor, she has already worked on several short films, both
+                        fiction and documentary. She has also experience as an editor’s assistant and editor for
+                        television production. Films edited by Dorota were presented at dozen of international film
+                        festivals worldwide and awarded with important awards.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section section-D">
+        <div class="container">
+            <h1>SALES</h1>
+            <a href="http://www.studioindeks.pl/" target="_blank"><img src="img/indeks.png" width="220" /></a>
+            <h1></h1>
+        </div>
+    </section>
+
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="video.popup.js"></script>
+
+        <script>
+            $(function(){
+                $("#video").videoPopup({
+                    autoplay: true,
+                    showControls: false,
+                    controlsColor: 'white',
+                    showVideoInformations: 0,
+                    width: 1000,
+                    customOptions: {
+                        rel: 0,
+                        end: 60
+                    }
+                });
+				$("#video1").videoPopup();
+            });
+        </script>
+
+
+
+</body>
+
+    <div class="footer">
+      <p><small>&#9400; 2019 Zi</small></p>
+    </div>
+</html>
